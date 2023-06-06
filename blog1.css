@@ -1,0 +1,160 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+    margin:0;
+    /* background-color: #efefef; */
+    background-image: url("img/fondo2.jpg");
+    background-size: 100%;
+}
+
+header{
+    /* background-color: #364552; */
+    background-color: #381863;
+    color:whitesmoke;
+    /* CON EL PADDING DAMOS TAMAÑO AL FONDO */
+    padding: 3rem 2rem;
+}
+
+header h1{
+    font-size: 4rem;
+    /* PARA CENTRAR LAS LETRAS */
+    text-align: center;
+}
+
+
+/* SECCION NOVEDADES */
+.novedades{
+    color:whitesmoke;
+    margin: 5rem 5rem 5rem 5rem;
+    padding-bottom: 10rem;
+}
+.novedades img{
+    width: 480px;
+    border-radius: 0.5rem;
+    float:left;
+    vertical-align: text-top;
+    border-color:lawngreen;
+}
+.novedades a{
+    background: #381863; /* color de fondo */
+    color: whitesmoke; /* color de fuente */
+    border: 2px solid #381863; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 5px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px;
+    margin-top: 30px;
+    border-color:lawngreen;
+}
+.novedades a:hover{
+    color: #4741d7;
+}
+.novedades a::after{
+    content: "";
+    background: greenyellow; /* color de fondo hover */
+    border: 3px solid #4a0559; /* tamaño y color de borde */
+    border-radius: 3px;
+    position: absolute;
+    z-index: -1;
+    padding: 10px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0);
+    transition: all 0.3s ease;
+}
+.novedades a:hover::after{
+    transition: all 0.3s ease-out;
+    transform: scale(1, 1);
+}
+.novedades p{
+    margin:20px 20px 20px 20px;
+    padding: auto;
+    display: inline;
+}
+
+
+
+
+/* SECCION CONTENIDO */
+.contenido{
+    margin: 5rem 5rem 5rem 5rem;
+    /* padding-bottom: 3rem; */
+    color:whitesmoke;
+}
+
+.contenido h1, h2{
+    color:whitesmoke;
+}
+.contenido article{
+    padding: 2rem;
+    background-color: #381863;
+    margin: 2rem;
+    box-shadow: 0 0.3rem 0.6rem rgba(0,0,0,0.5);
+}
+.contenido img{
+    width: 120px;
+    margin-right: 2rem;
+}
+.contenido img:hover{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+}
+
+
+
+
+
+/* SECCION PAGINAS */
+.paginas{    
+    margin: 5rem 10rem 10rem 10rem;
+    display: center;
+    position: center;
+}
+.paginas span{
+
+    margin: 3rem;
+    box-shadow: 0 0.3rem 0.6rem rgba(0,0,0,0.5);
+    border-radius: 00.5rem;
+    border-color: #4a0559 3px;
+    display: center;
+    position: center;
+}
+
+
+
+
+footer{
+    background-color: #222;
+    padding: 3rem;
+    color:whitesmoke;
+}
+footer section{
+    float: right;
+}
+
+/* ELIMINAR MARGEN DEL PARRAFO PARA ALINEAR */
+footer p{
+    margin:0;
+}
+
+/* CAMBIAMOS EL ESTILO DE LOS LING */
+footer a{
+    /* SUAVIZAMOS EL HOVER */
+    transition: color 0.3s ease;
+
+    color:#fff;
+    text-decoration: none;
+}
+footer a:hover{
+    color:cornflowerblue;
+    
+}
